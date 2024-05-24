@@ -38,6 +38,9 @@ echo "Génération de clé SSH..."
 ssh-keygen
 cp ~/.ssh/id_rsa.pub ~/desktop/ssh.txt
 
+echo "Installation de Docker"
+brew install docker
+
 echo "Add Visual Studio Code to PATH"
 cat << EOF >> ~/.zprofile
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
