@@ -36,6 +36,12 @@ brew install node
 
 echo "Génération de clé SSH..."
 ssh-keygen
+cp ~/.ssh/id_rsa.pub ~/desktop/ssh.txt
 
-# Impressions de chaque commande
+echo "Add Visual Studio Code to PATH"
+cat << EOF >> ~/.zprofile
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+
+#Impressions de chaque commande
 set -x
